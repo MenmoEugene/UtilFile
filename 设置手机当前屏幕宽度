@@ -1,0 +1,8 @@
+//设置宽度
+WindowManager m = getWindow().getWindowManager();
+Display d = m.getDefaultDisplay();
+WindowManager.LayoutParams p = getWindow().getAttributes();
+Point size = new Point();
+d.getSize(size);
+p.width = (int)(size.x*0.8);//设置dialog的宽度为当前手机屏幕的宽度*0.8
+getWindow().setAttributes(p);
