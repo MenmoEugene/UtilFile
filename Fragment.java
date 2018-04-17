@@ -12,6 +12,15 @@ public class AFragment extends Fragment{
 
 	private TextView mTvTitle;
 
+	public static Afragment newInstance(String title){
+	
+		AFragment fragment = new AFragment();
+		Bundle bundle = new Bundle();
+		bundle.putString("title",title);
+		fragment.setArguments(bundle);
+		return fragment;
+	}
+
 //相当于Activity中的setContent
 	public View onCreateView(LayoutInflater inflater, ViewGroup container ,Bundle saveInstanceState){
 		
