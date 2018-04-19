@@ -1,4 +1,5 @@
 //…Ë÷√øÌ∂»
+
 WindowManager m = getWindow().getWindowManager();
 Display d = m.getDefaultDisplay();
 WindowManager.LayoutParams p = getWindow().getAttributes();
